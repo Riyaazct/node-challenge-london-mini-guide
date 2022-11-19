@@ -21,6 +21,22 @@ app.get("/", (req, res) => {
   });
 });
 
+app.get("/pharmacies", (req, res) => {
+  res.json(Harrow.pharmacies);
+});
+
+app.get("/colleges", (req, res) => {
+  res.json(Harrow.colleges);
+});
+
+app.get("/doctors", (req, res) => {
+  res.json(Harrow.doctors);
+});
+
+app.get("/hospitals", (req, res) => {
+  res.json(Harrow.hospitals);
+});
+
 app.listen(port, () => {
   console.log(`Server listening on port ${port}`);
 });
